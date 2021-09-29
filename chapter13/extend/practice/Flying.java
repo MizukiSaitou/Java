@@ -1,0 +1,11 @@
+package extend.practice;
+
+public interface Flying{
+  // 抽象メソッド
+  void fly();
+
+  // defaultメソッド
+  default void powerOff(){
+    System.out.println("飛んでいる場合は落下します。");
+  }
+}
